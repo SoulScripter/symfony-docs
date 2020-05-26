@@ -353,7 +353,7 @@ set in the previous ones):
 
 #. ``config/packages/*.yaml`` (and ``*.xml`` and ``*.php`` files too);
 #. ``config/packages/<environment-name>/*.yaml`` (and ``*.xml`` and ``*.php`` files too);
-#. ``config/packages/services.yaml`` (and ``services.xml`` and ``services.php`` files too);
+#. ``config/services.yaml`` (and ``services.xml`` and ``services.php`` files too);
 
 Take the ``framework`` package, installed by default, as an example:
 
@@ -365,7 +365,7 @@ Take the ``framework`` package, installed by default, as an example:
   ``config/packages/dev/framework.yaml`` does not exist).
 * In the **test** environment, the ``config/packages/test/framework.yaml`` file
   is loaded to override some of the settings previously configured in
-  ``config/packages/framework.yaml``.
+  ``config/framework.yaml``.
 
 In reality, each environment differs only somewhat from others. This means that
 all environments share a large base of common configuration, which is put in
